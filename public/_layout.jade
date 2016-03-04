@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700")
+    link(rel="stylesheet" href="/vendor/adminize/css/adminize.min.css")
+    link(rel="stylesheet" href="/assets/css/docs.css")
+    title #{title}
+  body
+    != partial("/_includes/_head-nav")
+    != partial("/_includes/_side-nav")
+    div.main-contents
+      div.main-contents__body
+        != yield
+    != partial("/_includes/_scripts")

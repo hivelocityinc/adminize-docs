@@ -1,0 +1,19 @@
+{
+  "name": "adminize-doc",
+  "version": "0.1.0",
+  "description": "Documentaion site for Adminize.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "harp server --port 5000"
+  },
+  "keywords": [
+    "adminize",
+    "document"
+  ],
+  "author": "komeda",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "harp": "^0.20.1"
+  }
+}
