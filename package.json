@@ -4,6 +4,7 @@
   "description": "Documentaion site for Adminize.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bower install",
     "dev": "harp server --port 5000"
   },
   "keywords": [
