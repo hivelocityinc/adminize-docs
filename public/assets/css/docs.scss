@@ -6,10 +6,11 @@
 }
 
 .hero {
-  padding: 60px;
+  padding: 60px 30px;
   margin-top: -20px;
   margin-left: -25px;
   margin-right: -25px;
+  margin-bottom: 25px;
   background: linear-gradient(160deg, #7a8cad 0%, #79aab0 70%);
   color: #fff;
   box-shadow: 0 -1px 3px rgba(0,0,0,.1) inset;
@@ -43,5 +44,37 @@
     font-size: 0.8rem;
     margin-top: 20px;
     opacity: .7;
+  }
+}
+
+$docs-gutter: 30px;
+.docs-container {
+  padding: $docs-gutter;
+}
+
+.docs-body {
+  h2 {
+    margin-left: -$docs-gutter;
+    margin-right: -$docs-gutter;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    span {
+      padding: 10px 20px 10px ($docs-gutter - 8px);
+      display: block;
+      border-left: 8px solid #7a8cad;
+    }
+  }
+  pre {
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    code {
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+    }
   }
 }

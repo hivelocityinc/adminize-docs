@@ -1,13 +1,7 @@
 doctype html
 html
   head
-    meta(charset="utf-8")
-    link(rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css")
-    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700")
-    link(rel="stylesheet" href="/vendor/adminize/css/adminize.min.css")
-    link(rel="stylesheet" href="/assets/css/docs.css")
-    link(rel="icon" href="/assets/icon/favicon.ico")
-    title #{title}
+    != partial("/_includes/_head-includes")
   body
     != partial("/_includes/_head-nav")
     != partial("/_includes/_side-nav")

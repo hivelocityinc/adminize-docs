@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "adminize": "^0.2.2"
+    "adminize": "0.2.3",
+    "prism": "1.4.1"
   }
 }
