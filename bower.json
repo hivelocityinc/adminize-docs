@@ -20,7 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "adminize": "git@github.com:hivelocityinc/adminize.git#v0.4.2",
+    "adminize": "git://github.com:hivelocityinc/adminize.git#v0.4.2",
     "prism": "1.4.1"
   }
 }
