@@ -3,7 +3,7 @@ node_js: 4
 before_install:
   - rvm install 2.2.2
 install:
-  - npm install -g harp
+  - npm install -g harp bower
   - npm install
 before_script:
   - chmod +x ./scripts/deploy.sh
