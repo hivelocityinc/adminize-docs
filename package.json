@@ -1,11 +1,12 @@
 {
   "name": "adminize-doc",
   "version": "0.1.0",
-  "description": "Documentaion site for Adminize.",
+  "description": "Document for Adminize",
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install",
-    "dev": "harp server --port 5000"
+    "dev": "harp server --port 5000",
+    "deploy": "./scripts/deploy.sh"
   },
   "keywords": [
     "adminize",
