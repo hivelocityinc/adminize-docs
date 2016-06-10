@@ -4,7 +4,6 @@
   "description": "Document for Adminize",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install",
     "dev": "harp server --port 5000",
     "deploy": "./scripts/deploy.sh"
   },
