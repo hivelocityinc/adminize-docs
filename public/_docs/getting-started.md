@@ -18,7 +18,7 @@ $ bower install adminize
 
 <h2 id="template"><span>テンプレート</span></h2>
 
-基本的なHTMLテンプレートを[こちら](https://gitlab.hivelocity.co.jp/adminize/boilerplate/repository/archive.zip?ref=master)からダウンロードできます。
+基本的なHTMLテンプレートを[こちら](https://github.com/hivelocityinc/adminize/archive/master.zip)からダウンロードできます。
 
 ```html
 <!DOCTYPE html>
