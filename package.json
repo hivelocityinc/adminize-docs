@@ -4,7 +4,8 @@
   "description": "Document for Adminize",
   "main": "index.js",
   "scripts": {
-    "dev": "harp server --port 5000",
+    "develop": "harp server --port 5000",
+    "compile": "harp compile . www",
     "deploy": "./scripts/deploy.sh"
   },
   "keywords": [
