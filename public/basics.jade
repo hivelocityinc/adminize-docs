@@ -1,0 +1,19 @@
+ul.breadcrumbs
+  li.breadcrumbs__list
+    a(href="/") Home
+  li.breadcrumbs__list Basics
+
+div.panel.docs-container
+  div.docs-header
+    h1.page-header
+      i.fa.fa-star
+      span Basics
+  div.docs-body
+    != partial("/_docs/basics/head-nav.md")
+    != partial("/_docs/basics/side-nav.md")
+    != partial("/_docs/basics/main-cont.md")
+    != partial("/_docs/basics/typo.md")
+    != partial("/_docs/basics/tables.md")
+    != partial("/_docs/basics/forms.md")
+    != partial("/_docs/basics/lists.md")
+    
