@@ -146,4 +146,18 @@ $docs-border: 1px solid #ddd;
   .head-bar {
     position: static;
   }
+  .side-bar {
+    position: static;
+    z-index: 0;
+  }
+  .side-bar__header {
+    z-index: 0;
+  }
+  .scroll-wrap {
+    position: static;
+    padding-top: 0;
+    > .scroll-content {
+      position: static;
+    }
+  }
 }
