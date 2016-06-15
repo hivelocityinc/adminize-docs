@@ -1,6 +1,6 @@
 <h2 id="tab">Tab</h2>
 
-<div class="mb20">
+<div class="docs-example">
   <ul class="tab">
     <li class="is-active"><a href="#tab1" class="js-tab">Tab1</a></li>
     <li><a href="#tab2" class="js-tab">Tab2</a></li>
