@@ -1,4 +1,4 @@
-<h2 id="data-list">Label</h2>
+<h2 id="label">Label</h2>
 
 ### Basic
 
