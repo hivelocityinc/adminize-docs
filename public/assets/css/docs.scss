@@ -98,6 +98,10 @@ $docs-border: 1px solid #ddd;
       border-radius: 0;
     }
   }
+  > hr {
+    margin: 60px 0;
+    border-style: dashed;
+  }
 }
 .docs-container {
   border-color: #ddd;
