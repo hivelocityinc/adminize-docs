@@ -79,10 +79,23 @@ $docs-border: 1px solid #ddd;
   border-bottom-right-radius: 4px;
   > h2 {
     font-size: 26px;
-    padding-bottom: 6px;
+    padding: 6px 35px 10px;
     margin-top: $docs-gutter + 20;
+    margin-left: -35px;
+    margin-right: -35px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 6px;
+      height: 100%;
+      background-color: #7a8cad;
+    }
     &:first-child {
       margin-top: 0;
     }
