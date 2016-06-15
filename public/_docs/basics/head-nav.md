@@ -7,7 +7,7 @@ You have to put that in `<body>`.
   <div class="head-bar js-headbar">
     <div class="head-bar__toggle js-head-toggle"></div>
     <div class="user-dropdown js-dropdown">
-      <div class="user-name">komeda</div>
+      <div class="user-name">Username</div>
       <div class="user-avatar">
         <img src="//www.gravatar.com/avatar/b58f6ebea2155370e2daf60c369616b1" alt="user name">
       </div>
@@ -18,10 +18,10 @@ You have to put that in `<body>`.
         </i>
         <ul class="user-menu__content">
           <li class="user-menu__list">
-            <a href="#"><i class="fa fa-gear"></i><span>設定</span></a>
+            <a href="#"><i class="fa fa-gear"></i><span>Settings</span></a>
           </li>
           <li class="user-menu__list">
-            <a href="#"><i class="fa fa-sign-out"></i><span>サインアウト</span></a>
+            <a href="#"><i class="fa fa-sign-out"></i><span>Sign out</span></a>
           </li>
         </ul>
       </div>
@@ -33,7 +33,7 @@ You have to put that in `<body>`.
 <div class="head-bar js-headbar">
   <div class="head-bar__toggle js-head-toggle"></div>
   <div class="user-dropdown js-dropdown">
-    <div class="user-name">komeda</div>
+    <div class="user-name">Username</div>
     <div class="user-avatar">
       <img src="//www.gravatar.com/avatar/b58f6ebea2155370e2daf60c369616b1" alt="user name">
     </div>
@@ -44,10 +44,10 @@ You have to put that in `<body>`.
       </i>
       <ul class="user-menu__content">
         <li class="user-menu__list">
-          <a href="#"><i class="fa fa-gear"></i><span>設定</span></a>
+          <a href="#"><i class="fa fa-gear"></i><span>Settings</span></a>
         </li>
         <li class="user-menu__list">
-          <a href="#"><i class="fa fa-sign-out"></i><span>サインアウト</span></a>
+          <a href="#"><i class="fa fa-sign-out"></i><span>Sign out</span></a>
         </li>
       </ul>
     </div>
