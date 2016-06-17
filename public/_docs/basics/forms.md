@@ -120,7 +120,14 @@
 
 
 <div class="docs-example">
-  <div class="select-styled select--large">
+  <div class="select-styled select--large mb10">
+    <select name="test">
+      <option value="value1">custom 1</option>
+      <option value="value2">custom custom 2</option>
+      <option value="value3">long long long long long long long text</option>
+    </select>
+  </div>
+  <div class="select-styled">
     <select name="test">
       <option value="value1">custom 1</option>
       <option value="value2">custom custom 2</option>
@@ -128,3 +135,21 @@
     </select>
   </div>
 </div>
+
+```html
+<div class="select-styled select--large">
+  <select name="test">
+    <option value="value1">custom 1</option>
+    <option value="value2">custom custom 2</option>
+    <option value="value3">long long long long long long long text</option>
+  </select>
+</div>
+
+<div class="select-styled">
+  <select name="test">
+    <option value="value1">custom 1</option>
+    <option value="value2">custom custom 2</option>
+    <option value="value3">long long long long long long long text</option>
+  </select>
+</div>
+```
