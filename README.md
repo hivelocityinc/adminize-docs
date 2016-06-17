@@ -5,21 +5,21 @@ This is the documentaion website for [Adminize](https://github.com/hivelocityinc
 
 ## Updating
 
-** 1. Clone this repository.**
+**1. Clone this repository.**
 
 ```bash
 $ git clone git@github.com:hivelocityinc/adminize.git
 ```
 
-** 2. Run npm install**
+**2. Run npm install**
 
 ```bash
 $ npm install
 ```
 
-** 3. Update a .jade or .md file in `public` directory.  **
+**3. Update a .jade or .md file in `public` directory.**
 
-** 4. Run a local server **
+**4. Run a local server**
 
 ```bash
 $ npm run serve
