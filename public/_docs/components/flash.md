@@ -13,6 +13,10 @@
     <button type="button" class="close js-flmsg-close"></button>
     <p>Warning</p>
   </div>
+  <div class="flash-msg info">
+    <button type="button" class="close js-flmsg-close"></button>
+    <p>Info</p>
+  </div>
 </div>
 
 
@@ -30,5 +34,10 @@
 <div class="flash-msg warning">
   <button type="button" class="close js-flmsg-close"></button>
   <p>Warning</p>
+</div>
+
+<div class="flash-msg info">
+  <button type="button" class="close js-flmsg-close"></button>
+  <p>Info</p>
 </div>
 ```

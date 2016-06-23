@@ -30,12 +30,14 @@
   <p><input type="text" class="input--success" placeholder="success"></p>
   <p><input type="text" class="input--danger" placeholder="danger"></p>
   <p><input type="text" class="input--warning" placeholder="warning"></p>
+  <p><input type="text" class="input--info" placeholder="info"></p>
 </div>
 
 ```html
 <input type="text" class="input--success" placeholder="success">
 <input type="text" class="input--danger" placeholder="danger">
 <input type="text" class="input--warning" placeholder="warning">
+<input type="text" class="input--info" placeholder="info">
 ```
 
 
