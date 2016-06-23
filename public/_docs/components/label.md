@@ -18,6 +18,7 @@
   <p>Lorem Ipsum is simply dummy text. <span class="label label--success">Success</span></p>
   <p>Lorem Ipsum is simply dummy text. <span class="label label--danger">Danger</span></p>
   <p>Lorem Ipsum is simply dummy text. <span class="label label--warning">Warning</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--info">Info</span></p>
 </div>
 
 ```html
@@ -26,4 +27,5 @@
 <p>Lorem Ipsum is simply dummy text. <span class="label label--success">Success</span></p>
 <p>Lorem Ipsum is simply dummy text. <span class="label label--danger">Danger</span></p>
 <p>Lorem Ipsum is simply dummy text. <span class="label label--warning">Warning</span></p>
+<p>Lorem Ipsum is simply dummy text. <span class="label label--info">Info</span></p>
 ```
