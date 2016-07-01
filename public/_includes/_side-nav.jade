@@ -7,15 +7,15 @@ div.side-bar
   div.scroll-wrap
     div.scroll-content
       ul.side-bar__menu
-        li.side-bar__list
-          div.parent-title.js-side-parent.is-open
+        li.side-bar__list(class={'is-active': current.path[0] === 'getting-started'})
+          div.parent-title.js-side-parent(class={'is-open': current.path[0] === 'getting-started'})
             i.fa.fa-flag.icon
             span Getting Started
           ul.child-menu
             li.child-menu__list: a(href="./getting-started.html#install") Install
             li.child-menu__list: a(href="./getting-started.html#template") Template
-        li.side-bar__list
-          div.parent-title.js-side-parent.is-open
+        li.side-bar__list(class={'is-active': current.path[0] === 'basics'})
+          div.parent-title.js-side-parent(class={'is-open': current.path[0] === 'basics'})
             i.fa.fa-star.icon
             span Basics
           ul.child-menu
@@ -26,8 +26,8 @@ div.side-bar
             li.child-menu__list: a(href="./basics.html#tables") Tables
             li.child-menu__list: a(href="./basics.html#forms") Forms
             li.child-menu__list: a(href="./basics.html#lists") Lists
-        li.side-bar__list
-          div.parent-title.js-side-parent.is-open
+        li.side-bar__list(class={'is-active': current.path[0] === 'components'})
+          div.parent-title.js-side-parent(class={'is-open': current.path[0] === 'components'})
             i.fa.fa-cubes.icon
             span Components
           ul.child-menu
