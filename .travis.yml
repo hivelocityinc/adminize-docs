@@ -8,8 +8,10 @@ install:
 before_script:
   - chmod +x ./scripts/deploy.sh
 after_success:
-  - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && npm
-    run-script deploy'
+  - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && npm run-script deploy'
+notifications:
+  slack:
+    secure: p7wB96OAY4aVWRALJ/LBnoxGrdUtYCtmabiZixDCXMiza8tTglQYK3D13iVxmJ4FePB6WSP1uOa4KPrn/v+uN7NF9IjkHms5/QC0MmG2UX8O1Zr4/pSBTIxls3xsAEBpUM2SskXVOlRGMkpjH83w6kfqWM4VMAq0oQ0mDl9nH38n2pmhMKV+t2+9KiJB2lTAuOVLKpptb0XI2x9kFOOAAFpOomyRdE5HXQKkq7O17Fx+RuzUJmV/pAxeee8HZmx3MMgj9z5YsNdWZr8ldXMA/rpOUFm9DS8+ZqhONTQgouMG6yDq99OYhF5mJQ2skudbOXrQ7ZKjTAFY1U8dOFaeQpxaKI6EhDkO39mI/awX397cV4BGtBKv/T2oRf0ooeVX4gZnNn9lB0+wWX06jVdEsGSt72OZwsjvhhXgHjxelt0yOwsvzeeBQ9Qzy/i2mriuB6c2LgFcYP0D/SzUNxvzZ+BpNnI5K5l/Lba1LtQs2uLOGNK9nDdxkCiu2Wek+Os37nibrjuinorCx13JAyt4tUlXQ6M8nKf79J8Rolr5AuIilMCK77KlegUWH5DwrVNjYjG4QKBLLRnx+UB/HybHET76RnOGdvcbKDObHR1i5kKFuw0rq6heRMXHWjVdq7rRcADiZSGAh/87ltYplb448OQOmvddqO2mdwlKohY7blA=
 env:
   global:
     secure: CosGg9wYe7igLgM5yx39C8Eppj8116hSOP5oQouQCIHiHxQKKx2ByCjkZPXt6vQ5OxqkOD99NxwYfa+JV5Qb3YJpC43peJblmOrAj0IS4cjGYte052AsAkzhTPw5lUsumj52rZCRiJ+krLJ/sChzA6eEF98jbg48VhUMPG3o7m1w33fSl3zZVUV8H6223CjiH33WibDYSyvlK4ZsBs/rA0HLUMPXgaoSueiqdAQPudckhcZV8Ub79uzoFC5ccM7nu5ao6pVxbnTGO+ouy7csVGtUZAhtIwabydTAdAA6RA9uGfq5aDJr6KbiwWoSXNAkBgoF4f/kZ1ZragmkDfL/eli03rLFLMqBPak7LNfFvcttS0U6hLnHWuJlxs/LTywntevfvGCnaYiaIY9saApcBoV4O2P+oPZPYf5wqKIP24cQSvvHl2jX2oc4cVVrhdHvqRRhfa0FhG2KcoO66OOe90KWnqCqgA550otmPuVFC249fzXjKE171nhMKPIPsWFD5q8cW7LgzU1Wff6lGKyMJ/arfKQdpbBonW59itrO4ORjxyGQniefZjFkzRlouf+/zvLPU7FyJ64L7T3VaO2CCmQaS3poHh2jGGcVWMv/e7o2zzDT3ZBZFhsjPrKN2K0YV/KAX0SXlfOyMaTXgJ8TcO600cRTTfACdkRuA4HLEao=
