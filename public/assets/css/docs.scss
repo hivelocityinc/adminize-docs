@@ -177,3 +177,32 @@ $docs-border: 1px solid #ddd;
     }
   }
 }
+
+.valign-box {
+  div {
+    background-color: #fff;
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 12px;
+    border: 1px solid #eee;
+    &:nth-child(1) {
+      height: 130px;
+    }
+    &:nth-child(2) {
+      height: 90px;
+    }
+    &:nth-child(3) {
+      height: 50px;
+    }
+  }
+}
+
+.bg-box {
+  div {
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    padding: 12px;
+    margin: 0 10px;
+  }
+}
