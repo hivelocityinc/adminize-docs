@@ -17,4 +17,6 @@ $(function () {
 
   setReleaseName();
 
+  $('.input--calendar').flatpickr();
+
 });
