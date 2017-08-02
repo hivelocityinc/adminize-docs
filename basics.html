@@ -1,0 +1,813 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.airbnb.min.css"/><link rel="stylesheet" href="//rawgit.com/hivelocityinc/adminize/master/css/adminize.min.css"/><link rel="stylesheet" href="./assets/css/docs.css"/><link rel="icon" href="./assets/icon/favicon.ico"/><title>Adminize</title></head><body><div class="head-bar js-headbar"><div class="head-bar__toggle js-head-toggle"></div></div><div class="side-bar"><div class="side-bar__header"><div class="site-name"><a href="./"><img src="./assets/img/head-logo.png"/><span>Adminize</span></a></div></div><div class="scroll-wrap"><div class="scroll-content"><ul class="side-bar__menu"><li class="side-bar__list"><div class="parent-title js-side-parent"><i class="fa fa-flag icon"></i><span>Getting Started</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./getting-started.html#install">Install</a></li><li class="child-menu__list"><a href="./getting-started.html#template">Template</a></li></ul></li><li class="side-bar__list is-active"><div class="parent-title js-side-parent is-open"><i class="fa fa-star icon"></i><span>Basics</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./basics.html#head-nav">Head Navigation</a></li><li class="child-menu__list"><a href="./basics.html#side-nav">Side Navigation</a></li><li class="child-menu__list"><a href="./basics.html#main-cont">Main Contents</a></li><li class="child-menu__list"><a href="./basics.html#typo">Typography</a></li><li class="child-menu__list"><a href="./basics.html#tables">Tables</a></li><li class="child-menu__list"><a href="./basics.html#forms">Forms</a></li><li class="child-menu__list"><a href="./basics.html#lists">Lists</a></li><li class="child-menu__list"><a href="./basics.html#helper">Helper</a></li></ul></li><li class="side-bar__list"><div class="parent-title js-side-parent"><i class="fa fa-cubes icon"></i><span>Components</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./components.html#button">Button</a></li><li class="child-menu__list"><a href="./components.html#dropdown">Dropdown</a></li><li class="child-menu__list"><a href="./components.html#panel">Panel</a></li><li class="child-menu__list"><a href="./components.html#data-list">Data List</a></li><li class="child-menu__list"><a href="./components.html#tab">Tab</a></li><li class="child-menu__list"><a href="./components.html#pill">Pill</a></li><li class="child-menu__list"><a href="./components.html#modal">Modal</a></li><li class="child-menu__list"><a href="./components.html#datetime">Datetime Picker</a></li><li class="child-menu__list"><a href="./components.html#label">Label</a></li><li class="child-menu__list"><a href="./components.html#breadcrumbs">Breadcrumbs</a></li><li class="child-menu__list"><a href="./components.html#summary">Summary</a></li><li class="child-menu__list"><a href="./components.html#pagination">Pagination</a></li><li class="child-menu__list"><a href="./components.html#flash">Flash message</a></li></ul></li></ul></div></div></div><div class="main-contents"><div class="main-contents__body"><ul class="breadcrumbs"><li class="breadcrumbs__list"><a href="/">Home</a></li><li class="breadcrumbs__list">Basics</li></ul><div class="panel docs-container"><div class="docs-header"><h1 class="page-header"><i class="fa fa-star"></i><span>Basics</span></h1></div><div class="docs-body"><h2 id="head-nav">Head Navigation</h2>
+
+<p>This is required component when you building app with Adminize package.<br>You have to put that in <code>&lt;body&gt;</code>.</p>
+<div class="docs-example">
+  <div class="head-bar js-headbar">
+    <div class="head-bar__toggle js-head-toggle"></div>
+    <div class="user-dropdown js-dropdown">
+      <div class="user-name">Username</div>
+      <div class="user-avatar">
+        <img src="//www.gravatar.com/avatar/b58f6ebea2155370e2daf60c369616b1" alt="user name">
+      </div>
+      <div class="user-menu">
+        <i class="caret">
+          <i class="caret-outer"></i>
+          <i class="caret-inner"></i>
+        </i>
+        <ul class="user-menu__content">
+          <li class="user-menu__list">
+            <a href="#"><i class="fa fa-gear"></i><span>Settings</span></a>
+          </li>
+          <li class="user-menu__list">
+            <a href="#"><i class="fa fa-sign-out"></i><span>Sign out</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;head-bar js-headbar&quot;&gt;
+  &lt;div class=&quot;head-bar__toggle js-head-toggle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;user-dropdown js-dropdown&quot;&gt;
+    &lt;div class=&quot;user-name&quot;&gt;Username&lt;/div&gt;
+    &lt;div class=&quot;user-avatar&quot;&gt;
+      &lt;img src=&quot;//www.gravatar.com/avatar/b58f6ebea2155370e2daf60c369616b1&quot; alt=&quot;user name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;user-menu&quot;&gt;
+      &lt;i class=&quot;caret&quot;&gt;
+        &lt;i class=&quot;caret-outer&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;caret-inner&quot;&gt;&lt;/i&gt;
+      &lt;/i&gt;
+      &lt;ul class=&quot;user-menu__content&quot;&gt;
+        &lt;li class=&quot;user-menu__list&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-gear&quot;&gt;&lt;/i&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;user-menu__list&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-sign-out&quot;&gt;&lt;/i&gt;&lt;span&gt;Sign out&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="side-nav">Side Navigation</h2>
+
+<p>This is required component when you building app with Adminize package.<br>You have to put that after <code>Head Navigation</code> component.</p>
+<h3>Basic</h3><div class="docs-example">
+  <div class="side-bar">
+    <div class="side-bar__header">
+      <div class="site-name">
+        <a href="#"><img src="./assets/img/head-logo.png"><span>App Name</span></a>
+      </div>
+    </div>
+    <div class="scroll-wrap">
+      <div class="scroll-content">
+        <ul class="side-bar__menu">
+          <li class="side-bar__list is-active">
+            <a href="#">
+              <i class="fa fa-file-text icon"></i><span>Menu #1</span>
+            </a>
+          </li>
+          <li class="side-bar__list">
+            <a href="#">
+              <i class="fa fa-file-text icon"></i><span>Menu #2</span>
+            </a>
+          </li>
+          <li class="side-bar__list">
+            <a href="#">
+              <i class="fa fa-file-text icon"></i><span>Menu #3</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;side-bar&quot;&gt;
+  &lt;div class=&quot;side-bar__header&quot;&gt;
+    &lt;div class=&quot;site-name&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;./assets/img/head-logo.png&quot;&gt;&lt;span&gt;App Name&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;scroll-wrap&quot;&gt;
+    &lt;div class=&quot;scroll-content&quot;&gt;
+      &lt;ul class=&quot;side-bar__menu&quot;&gt;
+        &lt;li class=&quot;side-bar__list is-active&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-file-text icon&quot;&gt;&lt;/i&gt;&lt;span&gt;Menu #1&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;side-bar__list&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-file-text icon&quot;&gt;&lt;/i&gt;&lt;span&gt;Menu #2&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;side-bar__list&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-file-text icon&quot;&gt;&lt;/i&gt;&lt;span&gt;Menu #3&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Child menu item</h3><div class="docs-example">
+  <div class="side-bar">
+    <div class="side-bar__header">
+      <div class="site-name">
+        <a href="#"><img src="./assets/img/head-logo.png"><span>App Name</span></a>
+      </div>
+    </div>
+    <div class="scroll-wrap">
+      <div class="scroll-content">
+        <ul class="side-bar__menu">
+          <li class="side-bar__list is-active">
+            <div class="parent-title js-side-parent">
+              <i class="fa fa-file-text icon"></i><span>Parent</span>
+            </div>
+            <ul class="child-menu">
+              <li class="child-menu__list is-active"><a href="#">child 1</a></li>
+              <li class="child-menu__list"><a href="#">child 2</a></li>
+              <li class="child-menu__list"><a href="#">child 3</a></li>
+            </ul>
+          </li>
+          <li class="side-bar__list">
+            <div class="parent-title js-side-parent">
+              <i class="fa fa-file-text icon"></i><span>Parent</span>
+            </div>
+            <ul class="child-menu">
+              <li class="child-menu__list"><a href="#">child 1</a></li>
+              <li class="child-menu__list"><a href="#">child 2</a></li>
+              <li class="child-menu__list"><a href="#">child 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;side-bar&quot;&gt;
+  &lt;div class=&quot;side-bar__header&quot;&gt;
+    &lt;div class=&quot;site-name&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;./assets/img/head-logo.png&quot;&gt;&lt;span&gt;App Name&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;scroll-wrap&quot;&gt;
+    &lt;div class=&quot;scroll-content&quot;&gt;
+      &lt;ul class=&quot;side-bar__menu&quot;&gt;
+        &lt;li class=&quot;side-bar__list is-active&quot;&gt;
+          &lt;div class=&quot;parent-title js-side-parent&quot;&gt;
+            &lt;i class=&quot;fa fa-file-text icon&quot;&gt;&lt;/i&gt;&lt;span&gt;Parent&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;child-menu&quot;&gt;
+            &lt;li class=&quot;child-menu__list is-active&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;child-menu__list&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;child-menu__list&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;side-bar__list&quot;&gt;
+          &lt;div class=&quot;parent-title js-side-parent&quot;&gt;
+            &lt;i class=&quot;fa fa-file-text icon&quot;&gt;&lt;/i&gt;&lt;span&gt;Parent&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;child-menu&quot;&gt;
+            &lt;li class=&quot;child-menu__list&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;child-menu__list&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;child-menu__list&quot;&gt;&lt;a href=&quot;#&quot;&gt;child 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="side-nav">Main Contents</h2>
+
+<p>This is required component when you building app with Adminize package.<br>You have to put that after <code>Side Navigation</code> component.</p>
+<pre><code class="language-html">&lt;div class=&quot;main-contents&quot;&gt;
+  &lt;div class=&quot;main-contents__body&quot;&gt;
+    &lt;!-- Put your favorite component in here --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="typo">Typography</h2>
+
+<h3>Heading</h3><div class="docs-example">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</div>
+
+<h3>Styled Heading</h3><div class="docs-example">
+  <h1 class="page-header">Page Title</h1>
+  <h3 class="sub-header">Page Title</h3>
+</div>
+
+
+
+<pre><code class="language-html">&lt;h1 class=&quot;page-header&quot;&gt;Page Title&lt;/h1&gt;
+&lt;h3 class=&quot;sub-header&quot;&gt;Page Title&lt;/h3&gt;
+</code></pre>
+<h3>Paragraph, Strong and Small</h3><div class="docs-example">
+  <p>Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. <small>Lorem Ipsum</small> has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+<h3>Code</h3><div class="docs-example">
+  <p>Lorem Ipsum is simply dummy text of the <code>printing</code> and <code>typesetting industry</code>.</p>
+</div>
+
+<h3>Blockquote</h3><div class="docs-example">
+  <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</blockquote>
+</div>
+<h2 id="tables">Tables</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h3>Bordered</h3><p>Add <code>.table--bordered</code>.</p>
+<div class="docs-example table--bordered">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="language-html">&lt;table class=&quot;table table--bordered&quot;&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+<h3>Striped</h3><p>Add <code>.table--striped</code>.</p>
+<div class="docs-example table--striped">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="language-html">&lt;table class=&quot;table table--striped&quot;&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+<h3>Fixed Section Header</h3><div class="docs-example">
+  <table class="table ts-table-section">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ts-row-section">
+        <td>Header</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr class="ts-row-section">
+        <td>Header</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>komeda</td>
+        <td>27</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+.ts-row-section,
+.ts-row-fixed {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+</style>
+
+<pre><code class="language-html">&lt;table class=&quot;table ts-table-section&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&quot;ts-row-section&quot;&gt;
+      &lt;td&gt;Header&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;ts-row-section&quot;&gt;
+      &lt;td&gt;Header&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;komeda&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h2 id="forms">Forms</h2>
+
+<h3>Input</h3><div class="docs-example">
+  <input type="text">
+</div>
+
+<h3>Input sizing</h3><div class="docs-example">
+  <p><input type="text" class="input--xsmall" placeholder="xsmall"></p>
+  <p><input type="text" class="input--small" placeholder="small"></p>
+  <p><input type="text" placeholder="default"></p>
+  <p><input type="text" class="input--large" placeholder="large"></p>
+  <p><input type="text" class="input--full" placeholder="full"></p>
+</div>
+
+<pre><code class="language-html">&lt;input type=&quot;text&quot; class=&quot;input--xsmall&quot; placeholder=&quot;xsmall&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--small&quot; placeholder=&quot;small&quot;&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;default&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--large&quot; placeholder=&quot;large&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--full&quot; placeholder=&quot;full&quot;&gt;
+</code></pre>
+<h3>Input coloring</h3><div class="docs-example">
+  <p><input type="text" class="input--success" placeholder="success"></p>
+  <p><input type="text" class="input--danger" placeholder="danger"></p>
+  <p><input type="text" class="input--warning" placeholder="warning"></p>
+  <p><input type="text" class="input--info" placeholder="info"></p>
+</div>
+
+<pre><code class="language-html">&lt;input type=&quot;text&quot; class=&quot;input--success&quot; placeholder=&quot;success&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--danger&quot; placeholder=&quot;danger&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--warning&quot; placeholder=&quot;warning&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input--info&quot; placeholder=&quot;info&quot;&gt;
+</code></pre>
+<h3>Textarea</h3><div class="docs-example">
+  <textarea name="" rows="4" class="input--full"></textarea>
+</div>
+
+
+<h3>Radio</h3><div class="docs-example">
+  <ul class="list-inline">
+    <li>
+      <label for="radio1">
+        <input type="radio" name="radio" id="radio1" checked="checked" class="input-styled input--radio">
+        <i class="icon"></i>
+        <span>radio1</span>
+      </label>
+    </li>
+    <li>
+      <label for="radio2">
+        <input type="radio" name="radio" id="radio2" class="input-styled input--radio">
+        <i class="icon"></i>
+        <span>radio2</span>
+      </label>
+    </li>
+  </ul>
+</div>
+
+
+<pre><code class="language-html">&lt;label for=&quot;radio1&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio1&quot; checked=&quot;checked&quot; class=&quot;input-styled input--radio&quot;&gt;
+  &lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+  &lt;span&gt;radio1&lt;/span&gt;
+&lt;/label&gt;
+&lt;label for=&quot;radio2&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio2&quot; class=&quot;input-styled input--radio&quot;&gt;
+  &lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+  &lt;span&gt;radio2&lt;/span&gt;
+&lt;/label&gt;
+</code></pre>
+<h3>Checkbox</h3><div class="docs-example">
+  <ul class="list-inline">
+    <li>
+      <label for="checkbox1">
+        <input type="checkbox" name="checkbox" id="checkbox1" checked="checked" class="input-styled input--check">
+        <i class="icon"></i>
+        <span>checkbox1</span>
+      </label>
+    </li>
+    <li>
+      <label for="checkbox2">
+        <input type="checkbox" name="checkbox" id="checkbox2" class="input-styled input--check">
+        <i class="icon"></i>
+        <span>checkbox2</span>
+      </label>
+    </li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;label for=&quot;checkbox1&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox1&quot; checked=&quot;checked&quot; class=&quot;input-styled input--check&quot;&gt;
+  &lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+  &lt;span&gt;checkbox1&lt;/span&gt;
+&lt;/label&gt;
+&lt;label for=&quot;checkbox2&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox2&quot; class=&quot;input-styled input--check&quot;&gt;
+  &lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+  &lt;span&gt;checkbox2&lt;/span&gt;
+&lt;/label&gt;
+</code></pre>
+<h3>Styled Select</h3><div class="docs-example">
+  <div class="select-styled select--large mb10">
+    <select name="test">
+      <option value="value1">custom 1</option>
+      <option value="value2">custom custom 2</option>
+      <option value="value3">long long long long long long long text</option>
+    </select>
+  </div>
+  <div class="select-styled">
+    <select name="test">
+      <option value="value1">custom 1</option>
+      <option value="value2">custom custom 2</option>
+      <option value="value3">long long long long long long long text</option>
+    </select>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;select-styled select--large&quot;&gt;
+  &lt;select name=&quot;test&quot;&gt;
+    &lt;option value=&quot;value1&quot;&gt;custom 1&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;custom custom 2&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;long long long long long long long text&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;select-styled&quot;&gt;
+  &lt;select name=&quot;test&quot;&gt;
+    &lt;option value=&quot;value1&quot;&gt;custom 1&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;custom custom 2&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;long long long long long long long text&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="lists">Lists</h2>
+
+<h3>Basics</h3><div class="docs-example">
+  <ul>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+
+  <ol>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ol>
+</div>
+
+
+<h3>Unstyled</h3><div class="docs-example">
+  <ul class="list-unstyled">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3>Inline</h3><div class="docs-example">
+  <ul class="list-inline">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3>Inlined list for button</h3><div class="docs-example">
+  <ul class="list-btn">
+    <li><a class="btn btn--dark">Btn</a></li>
+    <li><a class="btn btn--dark">Btn</a></li>
+    <li><a class="btn btn--dark">Btn</a></li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;list-btn&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;btn btn--dark&quot;&gt;Btn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;btn btn--dark&quot;&gt;Btn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;btn btn--dark&quot;&gt;Btn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2 id="helper">Helper</h2>
+
+<h3>Font Weight</h3><div class="docs-example">
+  <p><span class="weight--bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry.</p>
+</div>
+
+<pre><code class="language-html">&lt;p&gt;&lt;span class=&quot;weight--bold&quot;&gt;Lorem Ipsum&lt;/span&gt; is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+</code></pre>
+<h3>Text Color</h3><div class="docs-example">
+  <p class="color--success">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <p class="color--danger">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <p class="color--warning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <p class="color--info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <p class="color--muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+
+<pre><code class="language-html">&lt;p class=&quot;color--success&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+&lt;p class=&quot;color--danger&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+&lt;p class=&quot;color--warning&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+&lt;p class=&quot;color--info&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+&lt;p class=&quot;color--muted&quot;&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+</code></pre>
+<h3>Text Align</h3><div class="docs-example">
+  <p class="align--left">Lorem Ipsum is simply dummy text.</p>
+  <p class="align--center">Lorem Ipsum is simply dummy text.</p>
+  <p class="align--right">Lorem Ipsum is simply dummy text.</p>
+</div>
+
+<pre><code class="language-html">&lt;p class=&quot;align--left&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/p&gt;
+&lt;p class=&quot;align--center&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/p&gt;
+&lt;p class=&quot;align--right&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/p&gt;
+</code></pre>
+<h3>Vertical Align</h3><div class="docs-example valign-box">
+  <div class="valign--top">Lorem Ipsum is simply dummy text.</div>
+  <div class="valign--middle">Lorem Ipsum is simply dummy text.</div>
+  <div class="valign--bottom">Lorem Ipsum is simply dummy text.</div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;valign--top&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+&lt;div class=&quot;valign--middle&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+&lt;div class=&quot;valign--bottom&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+</code></pre>
+<h3>Background Color</h3><div class="docs-example bg-box">
+  <div class="bg--success">Lorem Ipsum is simply dummy text.</div>
+  <div class="bg--danger">Lorem Ipsum is simply dummy text.</div>
+  <div class="bg--warning">Lorem Ipsum is simply dummy text.</div>
+  <div class="bg--info">Lorem Ipsum is simply dummy text.</div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;bg--success&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+&lt;div class=&quot;bg--danger&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+&lt;div class=&quot;bg--warning&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+&lt;div class=&quot;bg--info&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/div&gt;
+</code></pre>
+<h3>Display</h3><pre><code class="language-html">&lt;div class=&quot;display--inline&quot;&gt;display: inline;&lt;/div&gt;
+&lt;div class=&quot;display--block&quot;&gt;display: block;&lt;/div&gt;
+&lt;div class=&quot;display--inline-block&quot;&gt;display: inline-block;&lt;/div&gt;
+&lt;div class=&quot;display--flex&quot;&gt;display: flex;&lt;/div&gt;
+</code></pre>
+<h3>Margin / Padding</h3><ul>
+<li>Spacing: <code>0</code>, <code>2</code>, <code>3</code>, <code>5</code>, <code>10</code>, <code>15</code>, <code>20</code>, <code>25</code>, <code>30</code>, <code>40</code>, <code>50</code>, <code>60</code></li>
+</ul>
+<pre><code class="language-html">&lt;div class=&quot;mt20&quot;&gt;margin-top: 20px;&lt;/div&gt;
+&lt;div class=&quot;mr20&quot;&gt;margin-right: 20px;&lt;/div&gt;
+&lt;div class=&quot;mb20&quot;&gt;margin-bottom: 20px;&lt;/div&gt;
+&lt;div class=&quot;ml20&quot;&gt;margin-left: 20px;&lt;/div&gt;
+&lt;div class=&quot;mgn20&quot;&gt;margin: 20px;&lt;/div&gt;
+</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;pt20&quot;&gt;padding-top: 20px;&lt;/div&gt;
+&lt;div class=&quot;pr20&quot;&gt;padding-right: 20px;&lt;/div&gt;
+&lt;div class=&quot;pb20&quot;&gt;padding-bottom: 20px;&lt;/div&gt;
+&lt;div class=&quot;pl20&quot;&gt;padding-left: 20px;&lt;/div&gt;
+&lt;div class=&quot;pdn20&quot;&gt;padding: 20px;&lt;/div&gt;
+</code></pre>
+<h3>Float</h3><pre><code class="language-html">&lt;div class=&quot;float--left&quot;&gt;float: left;&lt;/div&gt;
+&lt;div class=&quot;float--right&quot;&gt;float: right;&lt;/div&gt;
+</code></pre>
+<h3>Flaot / Clearfix</h3><pre><code class="language-html">&lt;div class=&quot;clearfix&quot;&gt;
+  &lt;div class=&quot;float--left&quot;&gt;float: left;&lt;/div&gt;
+  &lt;div class=&quot;float--right&quot;&gt;float: right;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div></div></div></div><script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script src="//cdn.rawgit.com/hivelocityinc/adminize/master/js/adminize.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.min.js"></script><script src="./assets/js/script.js"></script></body></html>

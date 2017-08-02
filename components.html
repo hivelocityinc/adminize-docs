@@ -1,0 +1,613 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.airbnb.min.css"/><link rel="stylesheet" href="//rawgit.com/hivelocityinc/adminize/master/css/adminize.min.css"/><link rel="stylesheet" href="./assets/css/docs.css"/><link rel="icon" href="./assets/icon/favicon.ico"/><title>Adminize</title></head><body><div class="head-bar js-headbar"><div class="head-bar__toggle js-head-toggle"></div></div><div class="side-bar"><div class="side-bar__header"><div class="site-name"><a href="./"><img src="./assets/img/head-logo.png"/><span>Adminize</span></a></div></div><div class="scroll-wrap"><div class="scroll-content"><ul class="side-bar__menu"><li class="side-bar__list"><div class="parent-title js-side-parent"><i class="fa fa-flag icon"></i><span>Getting Started</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./getting-started.html#install">Install</a></li><li class="child-menu__list"><a href="./getting-started.html#template">Template</a></li></ul></li><li class="side-bar__list"><div class="parent-title js-side-parent"><i class="fa fa-star icon"></i><span>Basics</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./basics.html#head-nav">Head Navigation</a></li><li class="child-menu__list"><a href="./basics.html#side-nav">Side Navigation</a></li><li class="child-menu__list"><a href="./basics.html#main-cont">Main Contents</a></li><li class="child-menu__list"><a href="./basics.html#typo">Typography</a></li><li class="child-menu__list"><a href="./basics.html#tables">Tables</a></li><li class="child-menu__list"><a href="./basics.html#forms">Forms</a></li><li class="child-menu__list"><a href="./basics.html#lists">Lists</a></li><li class="child-menu__list"><a href="./basics.html#helper">Helper</a></li></ul></li><li class="side-bar__list is-active"><div class="parent-title js-side-parent is-open"><i class="fa fa-cubes icon"></i><span>Components</span></div><ul class="child-menu"><li class="child-menu__list"><a href="./components.html#button">Button</a></li><li class="child-menu__list"><a href="./components.html#dropdown">Dropdown</a></li><li class="child-menu__list"><a href="./components.html#panel">Panel</a></li><li class="child-menu__list"><a href="./components.html#data-list">Data List</a></li><li class="child-menu__list"><a href="./components.html#tab">Tab</a></li><li class="child-menu__list"><a href="./components.html#pill">Pill</a></li><li class="child-menu__list"><a href="./components.html#modal">Modal</a></li><li class="child-menu__list"><a href="./components.html#datetime">Datetime Picker</a></li><li class="child-menu__list"><a href="./components.html#label">Label</a></li><li class="child-menu__list"><a href="./components.html#breadcrumbs">Breadcrumbs</a></li><li class="child-menu__list"><a href="./components.html#summary">Summary</a></li><li class="child-menu__list"><a href="./components.html#pagination">Pagination</a></li><li class="child-menu__list"><a href="./components.html#flash">Flash message</a></li></ul></li></ul></div></div></div><div class="main-contents"><div class="main-contents__body"><ul class="breadcrumbs"><li class="breadcrumbs__list"><a href="/">Home</a></li><li class="breadcrumbs__list">Components</li></ul><div class="panel docs-container"><div class="docs-header"><h1 class="page-header"><i class="fa fa-cubes"></i><span>Components</span></h1></div><div class="docs-body"><h2 id="button">Button</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <a href="#" class="btn btn--default">Button</a>
+</div>
+
+<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn--default&quot;&gt;Button&lt;/a&gt;
+</code></pre>
+<h3>Coloring</h3><div class="docs-example">
+  <a href="#" class="btn btn--default">Default</a>
+  <a href="#" class="btn btn--primary">Primary</a>
+  <a href="#" class="btn btn--success">Success</a>
+  <a href="#" class="btn btn--danger">Danger</a>
+  <a href="#" class="btn btn--warning">Warning</a>
+  <a href="#" class="btn btn--info">Info</a>
+  <a href="#" class="btn btn--dark">Dark</a>
+</div>
+
+<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn--default&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--danger&quot;&gt;Danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--info&quot;&gt;Info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--dark&quot;&gt;Dark&lt;/a&gt;
+</code></pre>
+<h3>Sizing</h3><div class="docs-example">
+  <p>
+    <a href="#" class="btn btn--primary btn--small">Small</a>
+  </p>
+  <p>
+    <a href="#" class="btn btn--primary">Default</a>
+  </p>
+  <p>
+  <a href="#" class="btn btn--primary btn--large">Large</a>
+  </p>
+</div>
+
+<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--small&quot;&gt;Small&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--large&quot;&gt;Large&lt;/a&gt;
+</code></pre>
+<h3>with Icon</h3><p>Add <code>.with-icon</code>.</p>
+<div class="docs-example">
+  <a href="#" class="btn btn--success with-icon"><i class="fa fa-check"></i>Submit</a>
+  <a href="#" class="btn btn--primary with-icon"><i class="fa fa-pencil"></i>Edit</a>
+  <a href="#" class="btn btn--default with-icon"><i class="fa fa-reply"></i>Back</a>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;docs-example&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn--success with-icon&quot;&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;Submit&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn--primary with-icon&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;Edit&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn--default with-icon&quot;&gt;&lt;i class=&quot;fa fa-reply&quot;&gt;&lt;/i&gt;Back&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="dropdown">Dropdown</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <div class="dropdown-group">
+    <button type="button" class="btn btn--primary js-dropdown-toggle">Button<i class="fa fa-caret-down dropdown__caret"></i></button>
+    <ul class="dropdown pos-down pos-left">
+      <li><a href="#">Menu item 1</a></li>
+      <li><a href="#">Menu item 2</a></li>
+      <li><a href="#">Menu item 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;dropdown-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn--primary js-dropdown-toggle&quot;&gt;Button&lt;i class=&quot;fa fa-caret-down dropdown__caret&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;ul class=&quot;dropdown pos-down pos-left&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Positioning</h3><p>Add <code>.pos-top</code>, <code>.pos-down</code>, <code>.pos-left</code> and <code>.pos-right</code>.</p>
+<div class="docs-example">
+  <ul class="list-btn">
+    <li>
+      <div class="dropdown-group">
+        <button type="button" class="btn btn--primary js-dropdown-toggle">Down / Left<i class="fa fa-caret-down dropdown__caret"></i></button>
+        <ul class="dropdown pos-down pos-left">
+          <li><a href="#">Menu item 1</a></li>
+          <li><a href="#">Menu item 2</a></li>
+          <li><a href="#">Menu item 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown-group">
+        <button type="button" class="btn btn--primary js-dropdown-toggle">Down / Right<i class="fa fa-caret-down dropdown__caret"></i></button>
+        <ul class="dropdown pos-down pos-right">
+          <li><a href="#">Menu item 1</a></li>
+          <li><a href="#">Menu item 2</a></li>
+          <li><a href="#">Menu item 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown-group">
+        <button type="button" class="btn btn--primary js-dropdown-toggle">Top / Left<i class="fa fa-caret-down dropdown__caret"></i></button>
+        <ul class="dropdown pos-top pos-left">
+          <li><a href="#">Menu item 1</a></li>
+          <li><a href="#">Menu item 2</a></li>
+          <li><a href="#">Menu item 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown-group">
+        <button type="button" class="btn btn--primary js-dropdown-toggle">Top / Right<i class="fa fa-caret-down dropdown__caret"></i></button>
+        <ul class="dropdown pos-top pos-right">
+          <li><a href="#">Menu item 1</a></li>
+          <li><a href="#">Menu item 2</a></li>
+          <li><a href="#">Menu item 3</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;list-btn&quot;&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;dropdown-group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn--primary js-dropdown-toggle&quot;&gt;Down / Left&lt;i class=&quot;fa fa-caret-down dropdown__caret&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;ul class=&quot;dropdown pos-down pos-left&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;dropdown-group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn--primary js-dropdown-toggle&quot;&gt;Down / Right&lt;i class=&quot;fa fa-caret-down dropdown__caret&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;ul class=&quot;dropdown pos-down pos-right&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;dropdown-group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn--primary js-dropdown-toggle&quot;&gt;Top / Left&lt;i class=&quot;fa fa-caret-down dropdown__caret&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;ul class=&quot;dropdown pos-top pos-left&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;dropdown-group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn--primary js-dropdown-toggle&quot;&gt;Top / Right&lt;i class=&quot;fa fa-caret-down dropdown__caret&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;ul class=&quot;dropdown pos-top pos-right&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2 id="panel">Panel</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <div class="panel panel--default">
+    <div class="panel__head">
+      <h2 class="panel__title">Heading</h2>
+    </div>
+    <div class="panel__body">
+      some text
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel panel--default&quot;&gt;
+  &lt;div class=&quot;panel__head&quot;&gt;
+    &lt;h2 class=&quot;panel__title&quot;&gt;Heading&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    body text
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>with Data Lists</h3><div class="docs-example">
+  <div class="panel">
+    <div class="panel__head">
+      <h2 class="panel__title">Default Panel</h2>
+    </div>
+    <div class="panel__body">
+      <dl class="data-list">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">
+          <input type="text" name="">
+        </dd>
+      </dl>
+      <dl class="data-list">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__head&quot;&gt;
+    &lt;h2 class=&quot;panel__title&quot;&gt;Default Panel&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;dl class=&quot;data-list&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;&quot;&gt;
+      &lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;dl class=&quot;data-list&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="data-list">Data List</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <div class="panel">
+    <div class="panel__body">
+      <dl class="data-list">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+      </dl>
+      <dl class="data-list">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;dl class=&quot;data-list&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;dl class=&quot;data-list&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Column</h3><div class="docs-example">
+  <div class="panel">
+    <div class="panel__body">
+      <dl class="data-list col2">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+      </dl>
+      <dl class="data-list col2--50">
+        <dt class="data-list__title">Label</dt>
+        <dd class="data-list__body">Body text</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__body&quot;&gt;
+    &lt;dl class=&quot;data-list col2&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;dl class=&quot;data-list col2--50&quot;&gt;
+      &lt;dt class=&quot;data-list__title&quot;&gt;Label&lt;/dt&gt;
+      &lt;dd class=&quot;data-list__body&quot;&gt;Body text&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="tab">Tab</h2>
+
+<div class="docs-example">
+  <ul class="tab">
+    <li class="is-active"><a href="#tab1" class="js-tab">Tab1</a></li>
+    <li><a href="#tab2" class="js-tab">Tab2</a></li>
+    <li><a href="#tab3" class="js-tab">Tab3</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="tab1" class="tab-pane js-tab-pane is-active">
+      Content1
+    </div>
+    <div id="tab2" class="tab-pane js-tab-pane">
+      Content2
+    </div>
+    <div id="tab3" class="tab-pane js-tab-pane">
+      Content3
+    </div>
+  </div>
+</div>
+
+
+<pre><code class="language-html">&lt;ul class=&quot;tab&quot;&gt;
+  &lt;li class=&quot;is-active&quot;&gt;
+    &lt;a href=&quot;#tab1&quot; class=&quot;js-tab&quot;&gt;Tab1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#tab2&quot; class=&quot;js-tab&quot;&gt;Tab2&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#tab3&quot; class=&quot;js-tab&quot;&gt;Tab3&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div id=&quot;tab1&quot; class=&quot;tab-pane js-tab-pane is-active&quot;&gt;
+    &lt;p&gt;Content1&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab2&quot; class=&quot;tab-pane js-tab-pane&quot;&gt;
+    &lt;p&gt;Content2&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab3&quot; class=&quot;tab-pane js-tab-pane&quot;&gt;
+    &lt;p&gt;Content3&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="pill">Pill</h2>
+
+<div class="docs-example">
+  <ul class="pills">
+    <li class="is-active"><a href="#">Item1</a></li>
+    <li><a href="#">Item2</a></li>
+    <li><a href="#">Item3</a></li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;pills&quot;&gt;
+  &lt;li class=&quot;is-active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2 id="modal">Modal</h2>
+
+<div class="docs-example">
+  <a href="#" data-remodal-target="sampleModal" class="btn btn--primary with-icon">
+    <i class="fa fa-clone"></i> Call the modal
+  </a>
+  <div data-remodal-id="sampleModal" data-remodal-options="hashTracking: false" class="remodal">
+    <div class="remodal__head">
+      <h2 class="remodal__title">Heading of modal</h2>
+      <button data-remodal-action="close" class="remodal__close"></button>
+    </div>
+    <div class="remodal__body">
+      <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+    </div>
+    <div class="remodal__foot">
+      <ul class="list-btn align--right">
+        <li>
+          <button data-remodal-action="cancel" class="btn btn--default">Cancel</button>
+        </li>
+        <li>
+          <button data-remodal-action="confirm" class="btn btn--success">OK</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<pre><code class="language-html">&lt;!-- Call button --&gt;
+&lt;a href=&quot;#&quot; data-remodal-target=&quot;sampleModal&quot; class=&quot;btn btn--primary with-icon&quot;&gt;
+  &lt;i class=&quot;fa fa-clone&quot;&gt;&lt;/i&gt; Call the modal
+&lt;/a&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div data-remodal-id=&quot;sampleModal&quot; data-remodal-options=&quot;hashTracking: false&quot; class=&quot;remodal&quot;&gt;
+  &lt;div class=&quot;remodal__head&quot;&gt;
+    &lt;h2 class=&quot;remodal__title&quot;&gt;Heading of modal&lt;/h2&gt;
+    &lt;button data-remodal-action=&quot;close&quot; class=&quot;remodal__close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;remodal__body&quot;&gt;
+    &lt;p&gt;Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;remodal__foot&quot;&gt;
+    &lt;ul class=&quot;list-btn align--right&quot;&gt;
+      &lt;li&gt;
+        &lt;button data-remodal-action=&quot;cancel&quot; class=&quot;btn btn--default&quot;&gt;Cancel&lt;/button&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;button data-remodal-action=&quot;confirm&quot; class=&quot;btn btn--success&quot;&gt;OK&lt;/button&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="datetime">Datetime Picker</h2>
+
+<div class="docs-example">
+  <input type="text" class="input--calendar" value="2112-09-03">
+</div>
+
+<pre><code class="language-html">&lt;head&gt;
+  &lt;!-- include flatpickr css --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.airbnb.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;input type=&quot;text&quot; class=&quot;input--calendar&quot;&gt;
+
+  &lt;!-- include flatpickr js --&gt;
+  &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    $(&#39;.input--calendar&#39;).flatpickr();
+  &lt;/script&gt;
+
+&lt;/body&gt;
+</code></pre>
+<h2 id="label">Label</h2>
+
+<h3>Basic</h3><div class="docs-example">
+  <p>Lorem Ipsum is simply dummy text. <span class="label">New</span></p>
+</div>
+
+<pre><code class="language-html">&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+<h3>Coloring</h3><div class="docs-example">
+  <p>Lorem Ipsum is simply dummy text. <span class="label">Default</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--primary">Primary</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--success">Success</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--danger">Danger</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--warning">Warning</span></p>
+  <p>Lorem Ipsum is simply dummy text. <span class="label label--info">Info</span></p>
+</div>
+
+<pre><code class="language-html">&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label&quot;&gt;Default&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label label--primary&quot;&gt;Primary&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label label--success&quot;&gt;Success&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label label--danger&quot;&gt;Danger&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label label--warning&quot;&gt;Warning&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text. &lt;span class=&quot;label label--info&quot;&gt;Info&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+<h2 id="breadcrumbs">Breadcrumbs</h2>
+
+<div class="docs-example">
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__list">
+      <a href="#">Home</a>
+    </li>
+    <li class="breadcrumbs__list">
+      <a href="#">Second Page</a>
+    </li>
+    <li class="breadcrumbs__list">Third Page</li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;breadcrumbs&quot;&gt;
+  &lt;li class=&quot;breadcrumbs__list&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;breadcrumbs__list&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Second Page&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;breadcrumbs__list&quot;&gt;Third Page&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2 id="summary">Summary</h2>
+
+<div class="docs-example">
+  <div class="summaries">
+    <div class="summary">
+      <div class="summary__head">
+        <i class="fa fa-user"></i> Users
+      </div>
+      <div class="summary__body">
+        <span class="summary__num">2,000</span>
+        <span class="summary__num diff success">+1000(+50%)</span>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="summary__head">
+        <i class="fa fa-music"></i> Songs
+      </div>
+      <div class="summary__body">
+        <span class="summary__num">2,000</span>
+        <span class="summary__num diff danger">-1000(-50%)</span>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="summary__head">
+        <i class="fa fa-film"></i> Movies
+      </div>
+      <div class="summary__body">
+        <span class="summary__num">2,000</span>
+        <span class="summary__num diff">0(0%)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="language-html">&lt;div class=&quot;summaries&quot;&gt;
+  &lt;div class=&quot;summary&quot;&gt;
+    &lt;div class=&quot;summary__head&quot;&gt;
+      &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; Users
+    &lt;/div&gt;
+    &lt;div class=&quot;summary__body&quot;&gt;
+      &lt;span class=&quot;summary__num&quot;&gt;2,000&lt;/span&gt;
+      &lt;span class=&quot;summary__num diff success&quot;&gt;+1000(+50%)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;summary&quot;&gt;
+    &lt;div class=&quot;summary__head&quot;&gt;
+      &lt;i class=&quot;fa fa-music&quot;&gt;&lt;/i&gt; Songs
+    &lt;/div&gt;
+    &lt;div class=&quot;summary__body&quot;&gt;
+      &lt;span class=&quot;summary__num&quot;&gt;2,000&lt;/span&gt;
+      &lt;span class=&quot;summary__num diff danger&quot;&gt;-1000(-50%)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;summary&quot;&gt;
+    &lt;div class=&quot;summary__head&quot;&gt;
+      &lt;i class=&quot;fa fa-film&quot;&gt;&lt;/i&gt; Movies
+    &lt;/div&gt;
+    &lt;div class=&quot;summary__body&quot;&gt;
+      &lt;span class=&quot;summary__num&quot;&gt;2,000&lt;/span&gt;
+      &lt;span class=&quot;summary__num diff&quot;&gt;0(0%)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="pagination">Pagination</h2>
+
+<div class="docs-example">
+  <ul class="pagination">
+    <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+    <li><a href="#">1</a></li>
+    <li class="active"><span>2</span></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><span>...</span></li>
+    <li><a href="#">10</a></li>
+    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+  </ul>
+</div>
+
+<pre><code class="language-html">&lt;ul class=&quot;pagination&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-angle-double-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-angle-double-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2 id="flash">Flash Messages</h2>
+
+<div class="docs-example">
+  <div class="flash-msg success">
+    <button type="button" class="close js-flmsg-close"></button>
+    <p>Success</p>
+  </div>
+  <div class="flash-msg danger">
+    <button type="button" class="close js-flmsg-close"></button>
+    <p>Danger</p>
+  </div>
+  <div class="flash-msg warning">
+    <button type="button" class="close js-flmsg-close"></button>
+    <p>Warning</p>
+  </div>
+  <div class="flash-msg info">
+    <button type="button" class="close js-flmsg-close"></button>
+    <p>Info</p>
+  </div>
+</div>
+
+
+<pre><code class="language-html">&lt;div class=&quot;flash-msg success&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close js-flmsg-close&quot;&gt;&lt;/button&gt;
+  &lt;p&gt;Success&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;flash-msg danger&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close js-flmsg-close&quot;&gt;&lt;/button&gt;
+  &lt;p&gt;Danger&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;flash-msg warning&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close js-flmsg-close&quot;&gt;&lt;/button&gt;
+  &lt;p&gt;Warning&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;flash-msg info&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close js-flmsg-close&quot;&gt;&lt;/button&gt;
+  &lt;p&gt;Info&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</div></div></div></div><script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script src="//cdn.rawgit.com/hivelocityinc/adminize/master/js/adminize.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.min.js"></script><script src="./assets/js/script.js"></script></body></html>
